@@ -383,10 +383,20 @@ img {
    MOBILE RESPONSIVENESS (Media Queries)
    ========================================================================== */
 @media (max-width: 768px) {
+  .container {
+    width: 92%;
+    padding-inline: 1rem;
+  }
+
+  .navbar {
+    padding-inline: 1rem;
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    padding-inline: 1rem;
   }
 
   .hero-text h1 {
@@ -399,6 +409,11 @@ img {
 
   .hero-cta {
     justify-content: center;
+  }
+
+  .about-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-content {
